@@ -4,7 +4,7 @@ import random
 def roll2Dice():
     die1 = random.randint(1, 6)
     die2 = random.randint(1, 6)
-    print(die1, die2, "(sum: " + str(die1 + die2) + ")")
+    print(die1, die2, f"(sum: {str(die1 + die2)})")
     return die1 + die2
 
 # Menu function
@@ -38,7 +38,7 @@ def rollDiceUntilSnakeEyes():
         count += 1
         result = roll2Dice()
         if result == 2:
-            print("SNAKE EYES! It took", count, "rolls to get snake eyes.")
+            print(f"SNAKE EYES! It took {count} rolls to get snake eyes.")
             break
 
 # Main program
